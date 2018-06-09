@@ -1,0 +1,74 @@
+$break-small: 375px;
+$break-medium: 768px;
+$break-large: 1000px;
+
+.has-error {
+  input, textarea {
+    border: 2px solid red;
+    border-radius: 4px;
+  }
+  label {
+    color: red;
+  }
+  span {
+    padding-left: 10px;
+    color: red;
+  }
+}
+
+
+.form-group {
+  label {
+    display: block;
+    font-size: 20px;
+  }
+
+  input, textarea {
+    font-size: 20px;
+    border-radius: 5px;
+  }
+
+  input:focus, textarea:focus {
+    border: 8px;
+    solid: #555;
+  }
+
+  @media screen and (min-width: $break-small) {
+    padding: 0 15px;
+    input {
+      width: 100%;
+      padding: 12px 10px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+    textarea {
+      width: 100%;
+      height: 100px;
+      margin: 8px 0;
+    }
+  }
+
+  @media screen and (min-width: $break-medium) {
+    padding-left: 125px;
+    input {
+      width: 60%;
+      padding: 12px 10px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      width: 75%;
+      height: 100px;
+      margin: 8px 0 0 0;
+    }
+  }
+
+  @media screen and (min-width: $break-large) {
+    padding-left: 175px;
+    input {
+      width: 60%;
+    }
+
+  }
+}

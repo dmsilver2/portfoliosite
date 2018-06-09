@@ -1,0 +1,33 @@
+$break-small: 375px;
+$break-medium: 768px;
+$break-large: 1000px;
+
+.App {
+  font-family: sans-serif, Arial;
+  font-size: 14px;
+  margin: 0 auto 0 auto;
+  max-width: 1075px;
+  position: relative;
+  min-width: 430px;
+}
+h1 {
+  margin: 0;
+  font-size: 4em;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2em;
+}
+.clear-fix {
+  clear: both;
+}
+
+footer {
+  margin-top: 50px;
+  text-align: right;
+  width: 100%;
+  position: relative;
+  display: block;
+  border-radius: 12px 12px 0 0;
+}

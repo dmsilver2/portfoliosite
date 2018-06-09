@@ -1,0 +1,65 @@
+$break-small: 375px;
+$break-medium: 768px;
+$break-large: 1000px;
+
+.projects-section{
+  @media screen and (min-width: $break-medium) {
+    padding-top: 50px;
+  }
+}
+.project {
+  float: left;
+
+  a {
+    font-size: 30px;
+    text-decoration: none;
+  }
+
+  @media screen and (min-width: $break-small) {
+    padding: 0 10px 20px 10px;
+    width: 100%;
+    p, a{
+      margin: 0 auto 0 auto;
+      padding: 0 50px 0 50px;
+    }
+    p{
+      font-size: 16px;
+    }
+    img {
+      max-width: 150px;
+      height: auto;
+      margin: 0 auto 0 auto;
+      padding-right: 10px;
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: $break-medium) {
+    width: 40%;
+    padding: 0 30px 20px 30px;
+    p{
+      padding: 0;
+      font-size: 20px;
+    }
+    a{
+      padding: 0;
+    }
+    h2{
+      margin: 5px 0;
+    }
+    img {
+      max-width: none;
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0 auto 0 auto;
+      padding: 0;
+    }
+  }
+
+  @media screen and (min-width: $break-large) {
+    width: 30%;
+    padding: 0 15px 20px 15px;
+  }
+
+}

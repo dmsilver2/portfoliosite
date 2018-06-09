@@ -1,0 +1,13 @@
+$break-small: 375px;
+$break-medium: 768px;
+
+.about-me-section{
+  position: relative;
+
+  @media screen and (min-width: $break-small) {
+    padding: 0;
+  }
+  @media screen and (min-width: $break-medium) {
+    padding: 30px 0 0 0;
+  }
+}

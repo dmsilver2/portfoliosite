@@ -1,0 +1,39 @@
+$break-small: 375px;
+$break-medium: 768px;
+$break-large: 1000px;
+
+.App-header {
+  height: 605px;
+  color: white;
+  padding-top: 1px;
+  background-image: url("/assets/header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  div{
+    position: relative;
+    top: 175px;
+    left: 50px;
+    h1 {
+      font-size: 3em;
+      top: 25px;
+      color: #08fdd8;
+      span {
+        color: red;
+      }
+    }
+    h2 {
+      color:#08fdd8;
+      margin: 0;
+      text-align: left;
+    }
+  }
+
+  @media screen and (min-width: $break-small) {
+
+  }
+
+  @media screen and (min-width: $break-medium) {
+
+  }
+}
