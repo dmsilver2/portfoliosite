@@ -3,26 +3,27 @@ const app = express();
 const nodemailer = require('nodemailer');
 var bodyParser = require('body-parser');
 
-// create reusable transporter object using the default SMTP transport
-let transporter = nodemailer.createTransport({
-    service: 'Gmail',
-    auth: {
-        user: 'dmsilver2@gmail.com',
-        pass: 'secret'
-    },
-    tls: { rejectUnauthorized: false }
-});
 
-// setup email data with unicode symbols
-let mailOptions = {
-    to: 'dmsilver2@gmail.com', // list of receivers
-    from: 'dmsilver2@gmail.com'
-};
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 // send mail with defined transport object
 app.post("/api/send", function(req, res){
+  // create reusable transporter object using the default SMTP transport
+  let transporter = nodemailer.createTransport({
+      service: 'Gmail',
+      auth: {
+          user: 'dmsilver2@gmail.com',
+          pass: 'secret'
+      },
+      tls: { rejectUnauthorized: false }
+  });
+
+  // setup email data with unicode symbols
+  let mailOptions = {
+      to: 'dmsilver2@gmail.com', // list of receivers
+      from: 'dmsilver2@gmail.com'
+  };
   let message = 'Name: ' + req.body.name +'\n' +
                 'Email: ' + req.body.email +'\n' +
                 'Phone: ' + req.body.phone +'\n' +

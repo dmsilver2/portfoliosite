@@ -12,10 +12,10 @@ class Projects extends Component {
           <p>Created a responsive site that can be viewed on Computer, tablet, and mobile.</p>
           <br />
           <p>Created site with React, javascript, and nodejs.</p>
-          <a class="code-link" href="">See Code Here</a>
+          <a class="https://github.com/dmsilver2/portfoliosite" href="">See Code Here</a>
         </div>
         <div className="project">
-          <img src="/assets/William navas site photo.jpg" />
+          <img src="/assets/photographer_site.jpg" />
           <h2><a href="http://www.williamnavasphoto.com">Photographer Site</a></h2>
           <p>Custom CMS management system and album / prints ordering system for clients.</p>
           <br />
