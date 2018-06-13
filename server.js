@@ -3,8 +3,6 @@ const app = express();
 const nodemailer = require('nodemailer');
 var bodyParser = require('body-parser');
 
-
-
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 // send mail with defined transport object
