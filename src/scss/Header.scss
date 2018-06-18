@@ -13,7 +13,6 @@ $break-large: 1000px;
   div{
     position: relative;
     top: 175px;
-    padding-left: 50px;
     h1 {
       font-size: 3em;
       top: 25px;
@@ -30,10 +29,14 @@ $break-large: 1000px;
   }
 
   @media screen and (min-width: $break-small) {
-
+    div{
+      padding-left: 10px;
+    }
   }
 
   @media screen and (min-width: $break-medium) {
-
+    div{
+      padding-left: 50px;
+    }
   }
 }
